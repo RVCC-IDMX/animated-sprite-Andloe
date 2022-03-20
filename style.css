@@ -1,0 +1,35 @@
+.bird {
+    position: absolute;
+    top: 150%;
+    left: 40%;
+    background: transparent url('bird.png') 0 0 no-repeat;
+    /* 2871 * 148 */
+    width: 261px;
+    height: 148px;
+    transform: translate(-50%, -50%);
+    margin: 2em;
+    animation: fly 1s steps(11) infinite;
+}
+
+@keyframes fly {
+    100% {
+        background-position: -2871px, 0; 
+    }
+}
+
+body {
+    background: #0a7bab;
+}
+
+.sun {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5dd0a;
+    box-shadow: inset 15px 15px 10px #b5a305;
+}
